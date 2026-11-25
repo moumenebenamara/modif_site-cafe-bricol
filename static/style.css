@@ -1,0 +1,196 @@
+/* 
+ * Fonts
+ * The Slabo and Andika fonts are under SIL Open Font License:
+ * http://cafebricol.fr/static/SIL%20Open%20Font%20License.txt
+ */
+
+@font-face {
+  font-family: 'Slabo';
+  src: url('slabo.ttf');
+}
+
+@font-face {
+  font-family: 'Andika';
+  src: url('andika.ttf');
+}
+
+/* Links */
+a:link {color: #000000; text-decoration: underline; }
+a:visited {color: #000000; text-decoration: underline; }
+a:hover {color: #c6c6c4; text-decoration: underline; }
+
+#lcarte {
+  text-align: center;
+}
+
+/* General style */
+body {
+  font-family: 'Andika';
+  font-size: 22px;
+  background-color: #97bf20;
+  text-align: justify;
+}
+
+/* En-tête du site */
+.site-header {
+  background: #97bf20 url('banner.jpg') no-repeat center center;
+  background-size: 100% auto;
+  aspect-ratio: 720 / 233;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 15px;
+  margin: 1%;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+.site-header h1 {
+  font-family: 'Slabo';
+  font-size: 2.4em;
+  margin: 0 0 6px;
+  color: white;
+  text-align: center;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+}
+
+.site-subtitle {
+  font-family: 'Slabo';
+  font-size: 1.4em;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  margin: 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.75);
+}
+
+/* Barre de navigation */
+.site-nav {
+  background-color: #97bf20;
+  margin: 0 1%;
+  padding: 10px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.site-nav a,
+.site-nav a:visited {
+  color: #000000;
+  font-weight: bold;
+  text-decoration: none;
+  font-family: 'Andika';
+  font-size: 17px;
+  padding: 8px 13px;
+  border-radius: 8px;
+}
+
+.site-nav a:hover {
+  background-color: #7ea118;
+  color: #ffffff;
+}
+
+/* Liens vers les parties de la page */
+html {
+  scroll-behavior: smooth;
+}
+
+.block {
+  scroll-margin-top: 15px;
+}
+
+/* Ancien style des titres h1, pour les pages sans en-tête */
+h1 {
+  font-family: 'Slabo';
+  text-align: center;
+  color: white;
+}
+
+h2 {
+  font-family: 'Slabo';
+  text-align: center;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.25);
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+p {
+  margin: 2%;
+  padding-top: 0.2%;
+}
+
+/* Main blocks */
+div.block {
+  border-radius: 30px;
+  margin: 1%;
+  margin-top: 1.5%;
+  padding: 1%;
+  position: relative;
+  background-color: #97bf20;
+}
+
+#vert {
+  background-color: #97bf20;
+}
+
+
+#bleu {
+  background-color: #3b64d6;
+}
+
+#orange{
+  background-color: #f39324;
+}
+
+#jaune{
+  background-color: #caca20c7;
+}
+
+#rose {
+  background-color: #c72bad;
+}
+
+/* Images */
+<!--
+#rss {
+  height: 35px;
+}
+-->
+
+
+/* Affichage sur téléphone */
+@media (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
+  .site-header {
+    padding: 10px;
+    aspect-ratio: auto;
+    min-height: 150px;
+    background-size: cover;
+  }
+
+  .site-header h1 {
+    font-size: 1.6em;
+  }
+
+  .site-subtitle {
+    font-size: 1em;
+  }
+
+  .site-nav {
+    gap: 3px;
+  }
+
+  .site-nav a,
+  .site-nav a:visited {
+    font-size: 15px;
+    padding: 7px 9px;
+  }
+}
